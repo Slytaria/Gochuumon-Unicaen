@@ -67,13 +67,15 @@
             </div>
         </nav>
     </header>
-    <!-- Sidebar avec navigation par image -->
+    <!-- Home page avec une Sidebar pour navigation par image -->
     <div class="containerbody">
         <div class="row">
+            <div id="particles-js"></div>
             <div class="col-xs-12 col-md-9 pull-md-3 bd-content">
+                
                 <img alt="" class="img-responsive" src="img/home.jpg" style="margin:0 auto;">
             </div>
-            <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar">
+            <div class="col-xs-12 col-md-3 push-md-9 bd-sidebar" style="z-index: 1;">
                 <!-- Sidebar -->
                 <h1>Gochuumon wa Usagi Desu ka?</h1>
                 <ul class="homebox">
@@ -101,20 +103,22 @@
     </div>
     <!-- Footer -->
     <footer>
-    <div class="footer-bottom">
-        <div class="container">
-            <p class="pull-left"> Copyright © <a href="https://github.com/Slytaria/Gochuumon-Unicaen" target="_blank" title="github">Aurélien Thorel</a> 2017. All right reserved. </p>
-            <div class="pull-right">
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="pull-left" style="z-index: 1;"> Copyright © <a href="https://github.com/Slytaria/Gochuumon-Unicaen" target="_blank" title="github">Aurélien Thorel</a> 2017. All right reserved. </p>
+                <div class="pull-right">
+                </div>
             </div>
         </div>
-    </div>
     </footer>
     <!-- importation des différents fichier JavaScripts -->
     <script src="js/cheet.min.js" type="text/javascript"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- suppresion du chargement lorsque la page est chargée -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/custom.particles.js"></script>
+    <!-- suppresion du CSS Spinner lorsque la page est chargée -->
     <script>
     window.addEventListener("load", function() {
         var load_screen = document.getElementById("spinner-wrapper");

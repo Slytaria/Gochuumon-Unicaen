@@ -225,3 +225,13 @@ li img:hover {
 .footer-bottom p.pull-left {
   padding-top: 6px;
 }
+
+#particles-js {
+  position: fixed;
+  z-index: 1;
+  width: 84%;
+  height: 100%; 
+}
+.containerbody{
+  background-color: #fdfcfa;
+}
